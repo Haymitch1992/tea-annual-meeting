@@ -14,10 +14,9 @@
   font-weight: bold;
 }
 .bj {
-  background: #001278
-    url(http://www.ctma.com.cn/ctma_news/2018nianhui/baiqiang/bg_all_bq.jpg)
+  background: url(http://www.ctma.com.cn/ctma_news/2018nianhui/baiqiang/bg_all_bq.jpg)
     no-repeat 0px 0px;
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 100px;
 }
@@ -43,8 +42,7 @@
     padding: 20px 0 0 14px;
   }
   .bj {
-    background: #001278
-      url(http://www.ctma.com.cn/ctma_news/2018nianhui/baiqiang/bg_all_bq.jpg)
+    background: url(http://www.ctma.com.cn/ctma_news/2018nianhui/baiqiang/bg_all_bq.jpg)
       no-repeat 0px 0px;
     background-size: 100%;
     width: 100%;

@@ -26,7 +26,7 @@ body {
   padding: 0;
   background: #001278 url(http://www.ctma.com.cn/ctma_news/2018nianhui/bg.gif)
     repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 #nav {
   padding: 30px;
