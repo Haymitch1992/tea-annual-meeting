@@ -789,13 +789,12 @@ export default {
   mounted() {
     let num = 20;
     let dom = document.getElementById("cflRollLeft1");
-
-    console.log(dom);
+    let dom2 = document.getElementsByClassName("swiper-box")[0];
     let _this = this;
     function start() {
       _this.timer = setInterval(() => {
         num -= 1;
-        if (num < -1000) {
+        if (num < -(dom.offsetWidth - dom2.offsetWidth)) {
           num = 0;
         }
         dom.style.left = num + "px";
