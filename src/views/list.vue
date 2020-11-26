@@ -1,88 +1,24 @@
 <template>
   <div class="bj">
-    <h1 class="page-title">2020中国茶叶百强企业</h1>
+    <h1 class="page-title">{{ titleList[currentAcitve - 1] }}</h1>
     <div class="about">
       <!--选项-->
       <el-row :gutter="10" class="select-line">
-        <el-col :xs="24" :sm="12" :md="12" :lg="4" :xl="4">
+        <el-col
+          :xs="24"
+          :sm="12"
+          :md="12"
+          :lg="6"
+          :xl="6"
+          :key="index"
+          v-for="(item, index) in titleList"
+        >
           <div
             class="grid-content"
-            :class="{ active: currentAcitve === 1 }"
-            @click="clickTile(1)"
+            :class="{ active: currentAcitve === index + 1 }"
+            @click="clickTile(index + 1)"
           >
-            2019中国茶业百强县
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12" :md="12" :lg="5" :xl="5">
-          <div
-            class="grid-content"
-            :class="{ active: currentAcitve === 2 }"
-            @click="clickTile(2)"
-          >
-            2019中国茶业百强企业
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12" :md="12" :lg="5" :xl="5">
-          <div
-            class="grid-content"
-            :class="{ active: currentAcitve === 3 }"
-            @click="clickTile(3)"
-          >
-            2019中国茶旅融合十强示范县
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12" :md="12" :lg="5" :xl="5">
-          <div
-            class="grid-content"
-            :class="{ active: currentAcitve === 4 }"
-            @click="clickTile(4)"
-          >
-            2019中国十大生态产茶县
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12" :md="12" :lg="5" :xl="5">
-          <div
-            class="grid-content"
-            :class="{ active: currentAcitve === 5 }"
-            @click="clickTile(5)"
-          >
-            2019中国茶业最具创新力品牌
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
-          <div
-            class="grid-content"
-            :class="{ active: currentAcitve === 6 }"
-            @click="clickTile(6)"
-          >
-            2019中国茶业最受消费者认可品牌
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
-          <div
-            class="grid-content"
-            :class="{ active: currentAcitve === 7 }"
-            @click="clickTile(7)"
-          >
-            2019中国茶业最佳市场运行品牌
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
-          <div
-            class="grid-content"
-            :class="{ active: currentAcitve === 8 }"
-            @click="clickTile(8)"
-          >
-            2019中国茶业最具传播力品牌
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
-          <div
-            class="grid-content"
-            :class="{ active: currentAcitve === 9 }"
-            @click="clickTile(9)"
-          >
-            2019中国茶业年度特别贡献企业
+            {{ item }}
           </div>
         </el-col>
       </el-row>
@@ -1056,6 +992,17 @@ export default {
   data() {
     return {
       currentAcitve: 2,
+      titleList: [
+        "2020中国茶业百强企业",
+        "2020中国茶业百强县",
+        "“十三五”茶业发展十强县",
+        "2020年度茶业品牌建设十强县",
+        "2020年度茶业生态建设十强县",
+        "2020年度茶业创新十强企业",
+        "2020年度茶业社会责任十佳企业",
+        "2020年度茶业新锐十强企业",
+      ],
+      // 2020年度茶业百强县
       top100Data: [
         "1、湖南省益阳市安化县",
         "2、贵州省遵义市湄潭县",
@@ -1098,6 +1045,7 @@ export default {
         "4、广西壮族自治区南宁市横县",
         "5、河南省信阳市浉河区",
       ],
+      // “十三五”茶业发展十强县
       top10County: [
         "福建南平武夷山市",
         "浙江绍兴新昌县	",
@@ -1110,6 +1058,7 @@ export default {
         "江西景德镇浮梁县",
         "四川宜宾高县",
       ],
+      // 2020年度茶业品牌建设十强县
       top10Chaju: [
         "福建南平武夷山市",
         "浙江绍兴新昌县	",
@@ -1122,6 +1071,7 @@ export default {
         "江西景德镇浮梁县",
         "四川宜宾高县",
       ],
+      // 2020年度茶业生态建设十强县
       top10Innovate: [
         {
           name: "京华",
