@@ -26,6 +26,22 @@
     width: 100%;
     margin: auto;
   }
+  .title-img {
+    margin-bottom: 10px !important;
+  }
+  .select-line {
+    padding-bottom: 10px !important;
+  }
+  .img-box .zixun-item h3 {
+    font-size: 18px !important;
+  }
+  .img-box .zixun-item {
+    padding: 0 !important;
+    margin: 20px 0 0 0 !important;
+  }
+  .img-box .zixun {
+    padding: 20px 0 0 14px;
+  }
   .bj {
     background: #001278
       url(http://www.ctma.com.cn/ctma_news/2018nianhui/baiqiang/bg_all_bq.jpg)
@@ -41,7 +57,7 @@
   .brand-item .jiang {
     width: 90% !important;
     background-size: 60%;
-    height: 100px !important;
+    height: 106px !important;
     background-size: cover !important;
   }
   .brand-item .jiang a {

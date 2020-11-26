@@ -1,7 +1,12 @@
 <template>
   <div class="bj">
-    <h1 class="page-title">第十五届中国茶叶经济年会</h1>
+    <!-- <h1 class="page-title">第十五届中国茶叶经济年会</h1> -->
     <div class="about">
+      <img
+        src="http://www.ctma.com.cn/ctma_news/2019nianhui/bt_hg.png"
+        alt=""
+        class="title-img"
+      />
       <el-row :gutter="10" class="select-line">
         <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
           <div
@@ -632,14 +637,59 @@
 
         <el-row :gutter="20">
           <el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12">
-            <el-image :src="url" :preview-src-list="srcList"> </el-image>
+            <el-image :src="srcList[0]" :preview-src-list="srcList"> </el-image>
             <p>首长宣布开幕</p>
           </el-col>
           <el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12">
-            <el-image :src="url" :preview-src-list="srcList"> </el-image>
+            <el-image :src="srcList[1]" :preview-src-list="srcList"> </el-image>
             <p>首长宣布开幕</p>
           </el-col>
         </el-row>
+        <el-row :gutter="20">
+          <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
+            <el-image :src="srcList[2]" :preview-src-list="srcList"> </el-image>
+            <p>首长宣布开幕</p>
+          </el-col>
+          <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
+            <el-image :src="srcList[3]" :preview-src-list="srcList"> </el-image>
+            <p>首长宣布开幕</p>
+          </el-col>
+          <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
+            <el-image :src="srcList[4]" :preview-src-list="srcList"> </el-image>
+            <p>首长宣布开幕</p>
+          </el-col>
+          <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
+            <el-image :src="srcList[5]" :preview-src-list="srcList"> </el-image>
+            <p>首长宣布开幕</p>
+          </el-col>
+        </el-row>
+        <el-row :gutter="20">
+          <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
+            <el-image :src="srcList[6]" :preview-src-list="srcList"> </el-image>
+            <p>首长宣布开幕</p>
+          </el-col>
+          <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
+            <el-image :src="srcList[7]" :preview-src-list="srcList"> </el-image>
+            <p>首长宣布开幕</p>
+          </el-col>
+          <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
+            <el-image :src="srcList[8]" :preview-src-list="srcList"> </el-image>
+            <p>首长宣布开幕</p>
+          </el-col>
+          <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
+            <el-image :src="srcList[9]" :preview-src-list="srcList"> </el-image>
+            <p>首长宣布开幕</p>
+          </el-col>
+        </el-row>
+      </div>
+
+      <div class="img-box" id="test2">
+        <div class="img-box-title">
+          <h2>
+            精彩瞬间 - 2020年11月17日
+          </h2>
+          <span>更多</span>
+        </div>
         <el-row :gutter="20">
           <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="6">
             <el-image :src="url" :preview-src-list="srcList"> </el-image>
@@ -677,11 +727,10 @@
           </el-col>
         </el-row>
       </div>
-
-      <div class="img-box" id="test2">
+      <div class="img-box" id="test5">
         <div class="img-box-title">
           <h2>
-            精彩瞬间 - 2020年10月21日
+            精彩瞬间 - 2020年11月18日
           </h2>
           <span>更多</span>
         </div>
@@ -769,10 +818,18 @@ export default {
     return {
       currentAcitve: 2,
       url:
-        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_15.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_01.jpg",
       srcList: [
-        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_15.jpg",
-        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_15.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_01.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_02.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_03.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_04.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_05.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_06.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_07.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_08.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_09.jpg",
+        "http://www.ctma.com.cn/ctma_news/2019nianhui/slides/thumbs2/20191022/kms_10.jpg",
       ],
       timer: "",
     };
@@ -812,6 +869,11 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.title-img {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+}
 .swiper-box {
   position: relative;
   height: 200px;

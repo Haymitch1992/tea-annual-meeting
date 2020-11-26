@@ -1,18 +1,25 @@
 <template>
   <div id="app">
     <router-view />
+    <el-backtop :visibility-height="200" target="#app"></el-backtop>
   </div>
 </template>
 
 <style lang="scss">
+html,
+body {
+  height: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
-  overflow: hidden;
+  height: 100%;
+  overflow-y: hidden;
+  overflow: scroll;
 }
 body {
   margin: 0;
