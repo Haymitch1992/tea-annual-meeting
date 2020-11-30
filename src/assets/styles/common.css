@@ -17,6 +17,7 @@
   background: url(http://www.ctma.com.cn/ctma_news/2018nianhui/baiqiang/bg_all_bq.jpg)
     no-repeat 0px 0px;
   width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
   padding-top: 100px;
 }

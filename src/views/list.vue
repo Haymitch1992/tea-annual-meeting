@@ -1,6 +1,7 @@
 <template>
   <div class="bj">
     <h1 class="page-title">{{ titleList[currentAcitve - 1] }}</h1>
+
     <div class="about">
       <!--选项-->
       <el-row :gutter="10" class="select-line">
@@ -23,6 +24,18 @@
         </el-col>
       </el-row>
       <!--百强企业内容-->
+      <iframe
+        v-if="currentAcitve === 1"
+        style="width: 100%;height: 286px;margin-bottom:20px;"
+        frameborder="no"
+        allowfullscreen
+        mozallowfullscreen
+        webkitallowfullscreen
+        src="http://go.plvideo.cn/front/video/preview?vid=63d455972f34c24520fe0f04c7d37f0e_6"
+      ></iframe>
+      <p v-if="currentAcitve === 1" style="color:#fff;font-size:14px;">
+        说明：根据《中华人民共和国公司法》和《中华人民共和国证券法》中对预备上市公司信息披露的相关规定，部分企业未参与本年度企业信息调查。
+      </p>
       <el-row :gutter="10" v-if="currentAcitve === 1">
         <el-col
           :xs="12"
@@ -41,6 +54,15 @@
           </div>
         </el-col>
       </el-row>
+      <iframe
+        v-if="currentAcitve === 2"
+        style="width: 100%;height: 286px;margin-bottom:20px;"
+        frameborder="no"
+        allowfullscreen
+        mozallowfullscreen
+        webkitallowfullscreen
+        src="http://go.plvideo.cn/front/video/preview?vid=63d455972f19c8daca7653493d65951c_6"
+      ></iframe>
       <el-row :gutter="10" v-if="currentAcitve === 2">
         <el-col
           :xs="12"
@@ -594,406 +616,406 @@ export default {
       margin: 0 auto;
       width: 125px;
       height: 85px;
-      background-image: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg);
+      background-image: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg);
     }
     .logo-1 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px 0px;
     }
     .logo-2 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px 0px;
     }
     .logo-3 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px 0px;
     }
     .logo-4 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px 0px;
     }
     .logo-5 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px 0px;
     }
     .logo-6 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px 0px;
     }
     .logo-7 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px 0px;
     }
     .logo-8 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px 0px;
     }
     .logo-9 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px 0px;
     }
     .logo-10 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px 0px;
     }
     .logo-11 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -84px;
     }
     .logo-12 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -84px;
     }
     .logo-13 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -84px;
     }
     .logo-14 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -84px;
     }
     .logo-15 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -84px;
     }
     .logo-16 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -84px;
     }
     .logo-17 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -84px;
     }
     .logo-18 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -84px;
     }
     .logo-19 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -84px;
     }
     .logo-20 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -84px;
     }
     .logo-21 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -168px;
     }
     .logo-22 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -168px;
     }
     .logo-23 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -168px;
     }
     .logo-24 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -168px;
     }
     .logo-25 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -168px;
     }
     .logo-26 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -168px;
     }
     .logo-27 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -168px;
     }
     .logo-28 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -168px;
     }
     .logo-29 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -168px;
     }
     .logo-30 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -168px;
     }
     .logo-31 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -252px;
     }
     .logo-32 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -252px;
     }
     .logo-33 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -252px;
     }
     .logo-34 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -252px;
     }
     .logo-35 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -252px;
     }
     .logo-36 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -252px;
     }
     .logo-37 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -252px;
     }
     .logo-38 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -252px;
     }
     .logo-39 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -252px;
     }
     .logo-40 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -252px;
     }
     .logo-41 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -336px;
     }
     .logo-42 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -336px;
     }
     .logo-43 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -336px;
     }
     .logo-44 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -336px;
     }
     .logo-45 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -336px;
     }
     .logo-46 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -336px;
     }
     .logo-47 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -336px;
     }
     .logo-48 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -336px;
     }
     .logo-49 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -336px;
     }
     .logo-50 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -336px;
     }
     .logo-51 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -420px;
     }
     .logo-52 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -420px;
     }
     .logo-53 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -420px;
     }
     .logo-54 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -420px;
     }
     .logo-55 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -420px;
     }
     .logo-56 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -420px;
     }
     .logo-57 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -420px;
     }
     .logo-58 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -420px;
     }
     .logo-59 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -420px;
     }
     .logo-60 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -420px;
     }
     .logo-61 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -504px;
     }
     .logo-62 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -504px;
     }
     .logo-63 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -504px;
     }
     .logo-64 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -504px;
     }
     .logo-65 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -504px;
     }
     .logo-66 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -504px;
     }
     .logo-67 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -504px;
     }
     .logo-68 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -504px;
     }
     .logo-69 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -504px;
     }
     .logo-70 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -504px;
     }
     .logo-71 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -588px;
     }
     .logo-72 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -588px;
     }
     .logo-73 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -588px;
     }
     .logo-74 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -588px;
     }
     .logo-75 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -588px;
     }
     .logo-76 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -588px;
     }
     .logo-77 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -588px;
     }
     .logo-78 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -588px;
     }
     .logo-79 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -588px;
     }
     .logo-80 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -588px;
     }
     .logo-81 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -672px;
     }
     .logo-82 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -672px;
     }
     .logo-83 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -672px;
     }
     .logo-84 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -672px;
     }
     .logo-85 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -672px;
     }
     .logo-86 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -672px;
     }
     .logo-87 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -672px;
     }
     .logo-88 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -672px;
     }
     .logo-89 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -672px;
     }
     .logo-90 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -672px;
     }
     .logo-91 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -44px -756px;
     }
     .logo-92 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -260px -756px;
     }
     .logo-93 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -474px -756px;
     }
     .logo-94 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -690px -756px;
     }
     .logo-95 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -904px -756px;
     }
     .logo-96 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1114px -756px;
     }
     .logo-97 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1330px -756px;
     }
     .logo-98 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1550px -756px;
     }
     .logo-99 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1760px -756px;
     }
     .logo-100 {
-      background: url(http://www.ctma.com.cn/ctma_news/2019nianhui/baiqiang/2.jpg)
+      background: url(http://www.ctma.com.cn/ctma_news/2020nianhui/style/top_logos.jpg)
         no-repeat -1978px -756px;
     }
   }
